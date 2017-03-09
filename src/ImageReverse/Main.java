@@ -18,7 +18,9 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		// input path
-		String targetPath = "path";
+		String targetPath = "C:\\Users\\dsm_024\\Desktop\\test.jpg";
+		// output path
+		String outputPath = "C:\\Users\\dsm_024\\Desktop\\testR.jpg";
 		BufferedImage targetBuffer = null;
 		try {
 			targetBuffer = ImageIO.read(new File(targetPath));
@@ -30,7 +32,7 @@ public class Main {
 		OutputStream out = null;
 		try {
 			 // output path
-			 out = new FileOutputStream("");
+			 out = new FileOutputStream(outputPath);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
